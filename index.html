@@ -1,0 +1,170 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CapraIQ demo (synthetic data)</title>
+<style>
+body{font:16px/1.55 system-ui,sans-serif;margin:0;color:#1a1a1a;background:#f6f6f3}
+.ban{background:#b00020;color:#fff;text-align:center;font-weight:700;padding:14px;position:sticky;top:0;letter-spacing:.03em;z-index:5}
+main{max-width:900px;margin:0 auto;padding:16px}
+section{background:#fff;border-radius:8px;padding:8px 20px 20px;margin:18px 0;box-shadow:0 1px 3px #0002}
+h1{margin:.6em 0 .2em} h2{border-bottom:2px solid #2d6a4f;padding-bottom:4px}
+h3,h4,h5{color:#2d6a4f} code,pre{background:#eee;border-radius:4px;padding:1px 5px;font-size:.9em}
+pre{padding:10px;overflow-x:auto;white-space:pre}
+blockquote{margin:10px 0;padding:8px 12px;background:#fff3cd;border-left:4px solid #e0a800}
+.tw{overflow-x:auto} table{border-collapse:collapse;width:100%} td,th{border:1px solid #ddd;padding:6px 10px;text-align:left} th{background:#e9f2ee}
+.ok{color:#1b7f3b;font-weight:700} li{margin:4px 0;overflow-wrap:anywhere} p{overflow-wrap:anywhere}
+</style></head><body>
+<div class="ban">SYNTHETIC SAMPLE DATA - not real client data</div>
+<main>
+<h1>CapraIQ - demo</h1>
+<p>A static review page. Everything below was generated from synthetic sample data; no real client, store, or platform was accessed.</p>
+<section><h2>What is CapraIQ?</h2>
+<p>CapraIQ is a <strong>governed decision system</strong> for ecommerce growth. Agents investigate and <em>propose</em>; <strong>deterministic code computes every number</strong>. A human always decides.</p>
+<ul>
+<li><strong>Contribution profit, not ROAS.</strong> Net revenue minus COGS, shipping, payment fees and ad spend. Missing costs are flagged, never estimated. Ad-platform ROAS is attribution evidence only.</li>
+<li><strong>Evidence grades A-F.</strong> A = reconciled to store totals, sourced costs, signal persisted 7+ days. B = minor gaps. C = attribution-only. D = mismatch or contradicted. E = under 3 days. F = missing critical data.</li>
+<li><strong>Max 5 decisions</strong> per brief, ranked, each with expected impact and "what would prove this wrong".</li>
+<li><strong>Authority ladder:</strong> observe &lt; draft &lt; bounded &lt; approval-required &lt; prohibited.</li>
+<li><strong>Read-only v1:</strong> every external write is blocked by the policy engine.</li>
+</ul></section>
+<section><h2>Morning brief 1 (synthetic tenant)</h2><h3>CapraIQ Morning Brief [SYNTHETIC] - SYNTHETIC Billy Goat Botanicals</h3>
+<blockquote><strong>SYNTHETIC DATA</strong> - every number below comes from generated sample data. No real client, store, or platform was accessed.</blockquote>
+<p><strong>As of:</strong> 2026-10-14 | <strong>Window:</strong> last 7d (2026-10-08 to 2026-10-14) vs prior 28d | <strong>Mode:</strong> v1 READ-ONLY - nothing in this brief is executed; every action needs a human.</p>
+<h4>Snapshot (store platform = financial truth)</h4>
+<div class="tw"><table><thead><tr><th>Metric</th><th>Last 7d</th><th>Prior 28d</th><th>Per-day basis</th></tr></thead><tbody>
+<tr><td>Net revenue</td><td>1,962.70</td><td>1,543.35</td><td>avg/day</td></tr>
+<tr><td>Contribution profit</td><td>-97.65</td><td>164.00</td><td>avg/day</td></tr>
+<tr><td>Ad spend</td><td>993.94</td><td>528.08</td><td>avg/day</td></tr>
+<tr><td>MER</td><td>1.97</td><td>2.92</td><td>ratio</td></tr>
+<tr><td>Blended CAC</td><td>34.44</td><td>21.84</td><td>ratio</td></tr>
+<tr><td>Refund rate</td><td>3.59%</td><td>3.39%</td><td>ratio</td></tr>
+</tbody></table></div>
+<blockquote><strong>Cost data incomplete</strong> - missing: cogs:BB-07. Contribution profit excludes these costs (not estimated) and is therefore overstated.</blockquote>
+<h4>Decisions (2 of max 5, ranked)</h4>
+<h5>1. Prospecting Broad: spend 2.8x its baseline while store revenue moved +27%</h5>
+<ul>
+<li><strong>Grade:</strong> A - reconciled to store-platform totals; claim does not depend on cost inputs; signal persisted 7 days</li>
+<li><strong>Expected impact:</strong> $13,835.20 per 30d [spend_at_risk] - excess daily spend vs 28d baseline x 30; incremental store revenue not credited unless it appears in store data</li>
+<li><strong>What would prove this wrong:</strong> Disproved if store net revenue rose roughly in proportion to the extra spend (revenue lift &gt;= half the spend increase with MER within 10% of baseline), if the spike is a planned promo/launch, or if spend reverts to baseline within 3 days.</li>
+<li><strong>Authority:</strong> approval-required for <code>change_campaign_budget</code> (v1: advisory only, not executed)</li>
+<li><strong>Evidence basis:</strong> store | raised by ads_auditor; days in signal: 7</li>
+<li><strong>Detail:</strong> Avg daily spend $721.07 vs $259.90 baseline (+$13835.20/30d if sustained). Blended MER 1.9747 vs 2.9226. Platform-claimed ROAS 1.43 and Triple Whale 0.61 are attribution evidence only.</li>
+<li><strong>Skeptic's checks:</strong> checked revenue lift: store revenue +27% vs account spend +88%, MER 1.9747 vs 2.9226 - not proportional | platform-claimed ROAS ignored for grading (attribution is evidence only)</li>
+</ul>
+<h5>2. Supply COGS for 1 SKU(s): BB-07</h5>
+<ul>
+<li><strong>Grade:</strong> B - gap observed directly in store/cost data (a gap claim is verifiable but is not a profit claim)</li>
+<li><strong>Expected impact:</strong> $2,057.14 per 30d [revenue_exposure] - unpriced revenue exposure (not a profit figure), 30d projection</li>
+<li><strong>What would prove this wrong:</strong> Disproved if a COGS record already exists for these SKUs in the cost source (the gap is an ingestion/mapping error) or if these SKUs have no sales in the next 30 days.</li>
+<li><strong>Authority:</strong> draft for <code>draft_recommendation</code> (v1: advisory only, not executed)</li>
+<li><strong>Evidence basis:</strong> data_gap | raised by data_steward; days in signal: 7</li>
+<li><strong>Detail:</strong> Contribution profit is overstated because these SKUs have no cost on file. CapraIQ does not estimate costs. 480.00 of list revenue in the last 7d is unpriced.</li>
+<li><strong>Skeptic's checks:</strong> re-verified: gap reproduces from the cost book</li>
+</ul>
+<h4>Data quality</h4>
+<ul>
+<li>Reconciliation vs store platform: <strong>reconciled</strong> (90 days)</li>
+<li>[high] SKU BB-07: no COGS on file; 189 units / 6048.00 list revenue unpriced (contribution profit overstated by the unknown cost; NOT estimated)</li>
+</ul>
+<h4>Metric definitions</h4>
+<ul>
+<li><code>net_revenue</code> v1: gross - discounts - refunds; refunds on refund day; excludes tax and shipping charged. Source: store platform.</li>
+<li><code>contribution_profit</code> v1: net_revenue - COGS - shipping cost - payment fees - ad spend; fixed costs excluded; missing costs flagged not estimated.</li>
+<li><code>mer</code> v1: net_revenue / ad_spend (blended, all channels); null when spend = 0.</li>
+<li><code>blended_cac</code> v1: ad_spend / new_customers; new = customer's first non-cancelled order observed in loaded history; null when 0 new.</li>
+<li><code>refund_rate</code> v1: refunds / gross on the same period (cash basis).</li>
+<li><code>cohort_ltv</code> v1: cohort by first-order month; LTV_N = mean net revenue within N days of first order over customers observed &gt;= N days; observed data only.</li>
+</ul>
+<hr>
+<p><em>Numbers are computed by deterministic code. Agents investigate and propose; humans decide.</em></p></section>
+<section><h2>Morning brief 2 (synthetic tenant)</h2><h3>CapraIQ Morning Brief [SYNTHETIC] - SYNTHETIC Nanny Home Goods</h3>
+<blockquote><strong>SYNTHETIC DATA</strong> - every number below comes from generated sample data. No real client, store, or platform was accessed.</blockquote>
+<p><strong>As of:</strong> 2026-10-14 | <strong>Window:</strong> last 7d (2026-10-08 to 2026-10-14) vs prior 28d | <strong>Mode:</strong> v1 READ-ONLY - nothing in this brief is executed; every action needs a human.</p>
+<h4>Snapshot (store platform = financial truth)</h4>
+<div class="tw"><table><thead><tr><th>Metric</th><th>Last 7d</th><th>Prior 28d</th><th>Per-day basis</th></tr></thead><tbody>
+<tr><td>Net revenue</td><td>1,755.66</td><td>2,032.09</td><td>avg/day</td></tr>
+<tr><td>Contribution profit</td><td>239.03</td><td>580.82</td><td>avg/day</td></tr>
+<tr><td>Ad spend</td><td>436.72</td><td>438.76</td><td>avg/day</td></tr>
+<tr><td>MER</td><td>4.02</td><td>4.63</td><td>ratio</td></tr>
+<tr><td>Blended CAC</td><td>20.25</td><td>20.07</td><td>ratio</td></tr>
+<tr><td>Refund rate</td><td>12.60%</td><td>3.25%</td><td>ratio</td></tr>
+</tbody></table></div>
+<blockquote><strong>Cost data incomplete</strong> - missing: cogs:NH-07, cogs:NH-08. Contribution profit excludes these costs (not estimated) and is therefore overstated.</blockquote>
+<h4>Decisions (4 of max 5, ranked)</h4>
+<h5>1. Refund rate 12.6% vs 3.2% baseline, concentrated in NH-03 (61% of allocated refunds)</h5>
+<ul>
+<li><strong>Grade:</strong> A - reconciled to store-platform totals; claim does not depend on cost inputs; signal persisted 7 days</li>
+<li><strong>Expected impact:</strong> $5,739.88 per 30d [profit_at_stake] - excess refund dollars/day vs baseline x 30 (cash basis, store platform data)</li>
+<li><strong>What would prove this wrong:</strong> Disproved if the elevated refunds trace to a single order or batch already resolved, if refund rate returns to baseline within 7 days, or if refund dates reflect a delayed bulk-processing backlog rather than new returns.</li>
+<li><strong>Authority:</strong> draft for <code>draft_recommendation</code> (v1: advisory only, not executed)</li>
+<li><strong>Evidence basis:</strong> store | raised by profit_analyst; days in signal: 7</li>
+<li><strong>Detail:</strong> Refunds $1,837.70 in last 7d; top reason 'defective'. Investigate quality/fulfilment before scaling spend on this product.</li>
+<li><strong>Skeptic's checks:</strong> checked outlier: largest single refund is 8% of window total - not a single-order artefact</li>
+</ul>
+<h5>2. Gross margin fell on NH-02, NH-05</h5>
+<ul>
+<li><strong>Grade:</strong> B - reconciled to store-platform totals; costs sourced; signal persisted 7 days; not corroborated by a statistical anomaly vs 28d history -&gt; capped at B</li>
+<li><strong>Expected impact:</strong> $3,951.75 per 30d [profit_at_stake] - margin-rate loss x recent net revenue of these SKUs, 30d projection; versioned costs from cost table</li>
+<li><strong>What would prove this wrong:</strong> Disproved if the unit cost increase is a one-off/credited invoice, if margin on NH-02 returns to baseline within 7 days without action, or if the SKUs' volume mix explains the store-level change.</li>
+<li><strong>Authority:</strong> approval-required for <code>change_price</code> (v1: advisory only, not executed)</li>
+<li><strong>Evidence basis:</strong> store | raised by profit_analyst; days in signal: 7</li>
+<li><strong>Detail:</strong> NH-02: margin 61.5% -&gt; 44.5%, unit COGS 15.00-22.50 -&gt; 22.50; NH-05: margin 58.0% -&gt; 40.2%, unit COGS 21.00-31.50 -&gt; 31.50. Review supplier cost / price on these SKUs.</li>
+<li><strong>Skeptic's checks:</strong> store-wide cost gaps exist (cogs:NH-07, cogs:NH-08); store-level profit is overstated, SKU-level claim unaffected | checked persistence: margin below baseline on 7/7 recent days</li>
+</ul>
+<h5>3. Supply COGS for 2 SKU(s): NH-07, NH-08</h5>
+<ul>
+<li><strong>Grade:</strong> B - gap observed directly in store/cost data (a gap claim is verifiable but is not a profit claim)</li>
+<li><strong>Expected impact:</strong> $6,407.14 per 30d [revenue_exposure] - unpriced revenue exposure (not a profit figure), 30d projection</li>
+<li><strong>What would prove this wrong:</strong> Disproved if a COGS record already exists for these SKUs in the cost source (the gap is an ingestion/mapping error) or if these SKUs have no sales in the next 30 days.</li>
+<li><strong>Authority:</strong> draft for <code>draft_recommendation</code> (v1: advisory only, not executed)</li>
+<li><strong>Evidence basis:</strong> data_gap | raised by data_steward; days in signal: 7</li>
+<li><strong>Detail:</strong> Contribution profit is overstated because these SKUs have no cost on file. CapraIQ does not estimate costs. 1495.00 of list revenue in the last 7d is unpriced.</li>
+<li><strong>Skeptic's checks:</strong> re-verified: gap reproduces from the cost book</li>
+</ul>
+<h5>4. Lookalike Buyers: Triple Whale-attributed ROAS 0.96 (&lt;1.0) - waste candidate</h5>
+<ul>
+<li><strong>Grade:</strong> C - attribution-only evidence (ad platform / Triple Whale claims are not financial truth)</li>
+<li><strong>Expected impact:</strong> $237.04 per 30d [spend_at_risk] - attributed shortfall (spend minus Triple Whale revenue), 30d projection</li>
+<li><strong>What would prove this wrong:</strong> Disproved if turning the campaign down (or a holdout) does not reduce store net revenue, or if its first-order new-customer share / assisted conversions show value attribution misses.</li>
+<li><strong>Authority:</strong> approval-required for <code>change_campaign_budget</code> (v1: advisory only, not executed)</li>
+<li><strong>Evidence basis:</strong> attribution | raised by ads_auditor; days in signal: 7</li>
+<li><strong>Detail:</strong> ATTRIBUTION EVIDENCE ONLY: Triple Whale attributes $1,176.34 to $1,231.65 spend; platform claims ROAS 1.94. Neither is financial truth; assisted/upper-funnel value is not captured.</li>
+<li><strong>Skeptic's checks:</strong> attribution sources disagree (platform 1.94 vs Triple Whale 0.96); neither is financial truth | no store-level incrementality evidence available in v1 -&gt; cannot exceed C</li>
+</ul>
+<h4>Data quality</h4>
+<ul>
+<li>Reconciliation vs store platform: <strong>reconciled</strong> (90 days)</li>
+<li>[high] SKU NH-07: no COGS on file; 128 units / 8192.00 list revenue unpriced (contribution profit overstated by the unknown cost; NOT estimated)</li>
+<li>[high] SKU NH-08: no COGS on file; 143 units / 6435.00 list revenue unpriced (contribution profit overstated by the unknown cost; NOT estimated)</li>
+</ul>
+<h4>Metric definitions</h4>
+<ul>
+<li><code>net_revenue</code> v1: gross - discounts - refunds; refunds on refund day; excludes tax and shipping charged. Source: store platform.</li>
+<li><code>contribution_profit</code> v1: net_revenue - COGS - shipping cost - payment fees - ad spend; fixed costs excluded; missing costs flagged not estimated.</li>
+<li><code>mer</code> v1: net_revenue / ad_spend (blended, all channels); null when spend = 0.</li>
+<li><code>blended_cac</code> v1: ad_spend / new_customers; new = customer's first non-cancelled order observed in loaded history; null when 0 new.</li>
+<li><code>refund_rate</code> v1: refunds / gross on the same period (cash basis).</li>
+<li><code>cohort_ltv</code> v1: cohort by first-order month; LTV_N = mean net revenue within N days of first order over customers observed &gt;= N days; observed data only.</li>
+</ul>
+<hr>
+<p><em>Numbers are computed by deterministic code. Agents investigate and propose; humans decide.</em></p></section>
+<section><h2>Architecture, agents and policy engine</h2>
+<pre>sample data adapter -> ingest -> tenant-scoped store
+  -> metrics engine / anomaly rules / data-quality checks
+  -> agents propose (Data Steward, Profit Analyst, Ads Auditor, Lifecycle [phase 2 stub])
+  -> Skeptic tries to disprove; only role that sets grades
+  -> Chief of Staff dedupes, ranks, keeps top 5, logs to ledger, renders brief</pre>
+<ul>
+<li><strong>Per-client isolation:</strong> every data call is scoped to a tenant; no cross-client sharing.</li>
+<li><strong>Ledger:</strong> append-only, SHA-256 hash-chained record of decisions. The demo's chain verified OK (chain_ok=True; 3 and 5 entries for the two tenants).</li>
+<li><strong>Policy engine:</strong> default-deny, role clearances, action registry, full audit log.</li>
+</ul>
+<h3>Blocked-write results from the demo run</h3>
+<div class="tw"><table><thead><tr><th>Agent</th><th>Attempted action</th><th>Result</th></tr></thead><tbody>
+<tr><td>ads_auditor</td><td>change_campaign_budget</td><td>BLOCKED - v1 is read-only: external writes are blocked</td></tr>
+<tr><td>profit_analyst</td><td>change_price</td><td>BLOCKED - v1 is read-only: external writes are blocked</td></tr>
+<tr><td>chief_of_staff</td><td>spend_money</td><td>BLOCKED - prohibited action</td></tr></tbody></table></div>
+<p>Policy audit: 29 checks, 3 denied.</p></section>
+<section><h2>Test results</h2>
+<p class="ok">198 passed in 5.39s</p>
+<p>Result of re-running the full pytest suite on the day this page was generated (2026-10-15).</p></section>
+<p style="text-align:center;color:#666;font-size:.85em">SYNTHETIC SAMPLE DATA - not real client data. Generated 2026-10-15.</p>
+</main></body></html>
